@@ -286,7 +286,7 @@ body {
 
 .competenze {
   width: 100%;
-  background-image: url("images/Coding background.png");
+  background-image: url("../images/Coding background.png");
   background-size: 100%;
   margin-top: -2.8vw;
   z-index: 1;
@@ -383,7 +383,7 @@ body {
 .ending {
   position: relative;
   width: 100%;
-  background-image: url("images/Cubes.jpg");
+  background-image: url("../images/Cubes.jpg");
   background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
