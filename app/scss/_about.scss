@@ -1,0 +1,136 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #535353;
+  z-index: 2;
+  height: 78vh;
+  position: relative;
+  
+  .text {
+    margin: 0 0 0 12.5vw;
+    width: 37.7vw;
+    
+    h1 {
+      font-size: 3vw;
+      margin-bottom: 7px;
+    }
+
+    p {
+      font-size: 1.4vw;
+      
+      
+      a {
+        position: relative;
+        text-decoration: none;
+        color: #5cadca;
+
+        &:hover:after{
+          transform: scale(1);
+        }
+      }
+      
+      a:after{
+        transform: scale(0);
+        content: '';
+        position: absolute;
+        height: 0.17vw;
+        width: 100%;
+        bottom: -0.2vw;
+        left: 0;
+        transition: 150ms ease-in;
+        background: #5cadca;
+        border-radius: 1vw;
+      }
+    }
+  }
+
+  .txt1 {
+    margin-top: 17vh;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .txt2 {
+    margin-bottom: 3.3vh;
+  }
+
+  .photo {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    
+    img {
+      height: 62vh;
+      display: block;
+      margin: 8.8vh 12vw 0 0;
+      border-radius: 3px;
+    }
+  }
+}
+
+#competenze {
+  position: absolute;
+  height: 0;
+  width: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+
+
+
+// Media query for mobile
+@media only screen and (max-width: 769px) {
+  .about {
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+
+    .text {
+      margin: 6vw 0 0 0;
+      width: 73vw;
+      
+      h1 {
+        text-align: center;
+        font-size: 6vw;
+        margin: 7vw 0 7px 0;
+      }
+  
+      p {
+        font-size: 3.4vw;
+
+        &:hover:after{
+          transform: scale(0);
+        }
+      }
+    }
+  
+    .txt1 {
+      margin-top: 0;
+      order: 1;
+  
+      p {
+        margin-bottom: 6vw;
+      }
+    }
+  
+    .txt2 {
+      margin: 3vw 0 4vw 0;
+      order: 3;
+    }
+  
+    .photo {
+      align-items: center;
+      flex-grow: 0;
+      order: 2;
+      
+      img {
+        width: 73vw;
+        height: auto;
+        margin: 0;
+      }
+    }
+  }
+}

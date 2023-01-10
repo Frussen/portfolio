@@ -1,0 +1,23 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  color: white;
+  font-weight: 700;
+}
+
+* {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,98 @@
+.competenze {
+
+  width: 100%;
+  background-image: url("images\Coding background.png");
+  background-size: 100%;
+  margin-top: -2.8vw;
+  z-index: 1;
+  position: relative;
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    div {
+      margin: 7vw 0 0 49vw;
+
+      h3 {
+        font-size: 1.9vw;
+        margin: 1.2vw 0 1vw;
+      }
+      ul {
+        margin: 1.4vw 0 1vh -1.2vw;
+    
+        li {
+          font-size: 1.5vw;
+          margin-bottom: 0.4vw;
+        }
+      }
+    }
+
+    #second {
+      margin: 3vw 0 0 57vw;
+    }
+
+    p {
+      margin: 4.3vw 0 6vw 65vw;
+      width: 30vw;
+      font-size: 1.8vw;
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+  
+}
+
+
+.progetti {
+  
+  width: 100%;
+  
+  background-size: 100%;
+
+  h1 {
+    font-size: 3vw;
+  }
+}
+
+
+
+// Media query for mobile
+@media only screen and (max-width: 769px) {
+  .competenze {
+    margin-top: 0;
+    background-image: url("/images/Cubes.jpg");
+
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        margin: 0;
+
+        h3 {
+          margin: 11vw 1vw 1vw;
+          font-size: 3.7vw;
+        }
+
+        ul {
+          margin: 1.4vw 0 10vw -5.2vw;
+          li {
+            font-size: 3.4vw;
+          }
+        }
+      }
+
+      #second {
+        margin: -11vw 0 0 4vw;
+      }
+
+      p {
+        margin: 0 0 23vw 23vw;
+        width: 55vw;
+        font-size: 3.4vw;
+      }
+    }
+  }
+}
