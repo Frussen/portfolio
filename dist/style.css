@@ -122,9 +122,9 @@ body {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    padding: 4vw 0;
+    padding: 2vw 0;
     margin: 0;
-    font-size: 7vw;
+    font-size: 5vw;
   }
   .header .links a:hover:after {
     width: 0;
@@ -241,11 +241,11 @@ body {
   }
   .about .text h1 {
     text-align: center;
-    font-size: 6vw;
-    margin: 7vw 0 7px 0;
+    font-size: 10vw;
+    margin: 12.5vw 0 8vw 0;
   }
   .about .text p {
-    font-size: 3.4vw;
+    font-size: 5vw;
   }
   .about .text p:hover:after {
     -webkit-transform: scale(0);
@@ -258,10 +258,10 @@ body {
             order: 1;
   }
   .about .txt1 p {
-    margin-bottom: 6vw;
+    margin-bottom: 11vw;
   }
   .about .txt2 {
-    margin: 3vw 0 4vw 0;
+    margin: 6vw 0 4.5vw 0;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -358,25 +358,25 @@ body {
             align-items: center;
   }
   .competenze .wrapper div {
-    margin: 0;
+    margin: 0 10vw;
   }
   .competenze .wrapper div h3 {
-    margin: 11vw 1vw 1vw;
-    font-size: 3.7vw;
+    margin: 18vw 1vw 1vw;
+    font-size: 5.7vw;
   }
   .competenze .wrapper div ul {
     margin: 1.4vw 0 10vw -5.2vw;
   }
   .competenze .wrapper div ul li {
-    font-size: 3.4vw;
+    font-size: 5vw;
   }
   .competenze .wrapper #second {
-    margin: -11vw 0 0 4vw;
+    margin: -11vw 10vw 0 10vw;
   }
   .competenze .wrapper p {
-    margin: 0 0 23vw 23vw;
-    width: 55vw;
-    font-size: 3.4vw;
+    margin: 4vw 10vw 9vw;
+    width: auto;
+    font-size: 5.7vw;
   }
 }
 
@@ -415,7 +415,6 @@ body {
   position: absolute;
   width: 20vw;
   font-size: 1.4vw;
-  font-weight: 700;
   top: 5.5vw;
   right: 3vw;
   color: #333;
@@ -594,183 +593,136 @@ body {
 }
 
 @media only screen and (max-width: 769px) {
-  .ending {
-    height: auto;
-  }
   .ending h1 {
-    margin: 4.6vw 0.4vw 4.3vw;
-    font-size: 3vw;
+    text-align: center;
+    margin: 11vw 12vw 11vw;
+    font-size: 7.4vw;
   }
   .ending .image-wrapper {
-    position: relative;
-    text-align: center;
-  }
-  .ending .image-wrapper .project {
-    display: block;
-    width: 90vw;
-    margin-bottom: 6vw;
-    border-radius: 1.18vw;
-  }
-  .ending .image-wrapper span {
-    position: absolute;
-    width: 20vw;
-    font-size: 1.4vw;
-    font-weight: 700;
-    top: 5.5vw;
-    right: 3vw;
-    color: #333;
-  }
-  .ending .contatti {
-    position: relative;
-    display: -ms-grid;
-    display: grid;
-    grid-template: 'h3 h3' 'Nome Messaggio' 'E-mail Messaggio' 'Oggetto Invia';
-    justify-items: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    width: 90vw;
-    height: 33.5vw;
-    background-color: rgba(69, 69, 69, 0.9);
-    border-radius: 2.08vw 2.08vw 0;
-    margin-bottom: 3.68vw;
-  }
-  .ending .contatti input[type=text] {
-    width: 40vw;
-    height: 5.2vw;
-    margin: 1vw 1.5vw 0 3.5vw;
-    padding: 0;
-    background-color: #5C5C5C;
-    font-size: 2vw;
-    color: white;
-    border-radius: 0.63vw;
-    border: none;
-    resize: none;
-  }
-  .ending .contatti input[type=text]:focus {
-    outline: none;
-  }
-  .ending .contatti input[type=text].item4 {
-    margin-bottom: 4vw;
-  }
-  .ending .contatti textarea {
-    width: 40vw;
-    height: 12.4vw;
-    background-color: #5C5C5C;
-    margin: 1vw 3.5vw 0vw 1.5vw;
-    font-size: 2vw;
-    font-family: sans-serif;
-    color: white;
-    border-radius: 0.63vw;
-    border: none;
-    resize: none;
-  }
-  .ending .contatti textarea:focus {
-    outline: none;
-  }
-  .ending .contatti .item1 {
-    grid-area: h3;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    font-size: 3vw;
-    margin: 3.5vw 0 1vw;
-  }
-  .ending .contatti .item2 {
-    grid-area: Nome;
-  }
-  .ending .contatti .item3 {
-    grid-area: E-mail;
-  }
-  .ending .contatti .item4 {
-    grid-area: Oggetto;
-  }
-  .ending .contatti .item5 {
-    grid-area: Messaggio;
-  }
-  .ending .contatti .item6 {
-    grid-area: Invia;
-    margin: 1.7vw 2vw 0 0;
-    padding: 0;
-    width: 17vw;
-    height: 4.8vw;
-    border-radius: 0.63vw;
-    background-color: #3C86C8;
-    font-size: 2.8vw;
-    font-weight: 700;
-    color: white;
-    border: none;
-  }
-  .ending .contatti .item6:hover {
-    color: #3C86C8;
-    background-color: aliceblue;
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-  }
-  .ending .contatti::after {
-    content: "";
-    display: block;
-    border-top: 2.22vw solid rgba(69, 69, 69, 0.9);
-    border-right: 2.22vw solid rgba(69, 69, 69, 0.9);
-    border-bottom: 2.22vw solid transparent;
-    border-left: 2.22vw solid transparent;
-    position: absolute;
-    top: 33.5vw;
-    right: 0;
-  }
-  .ending .footer {
-    position: relative;
-    width: 83.4vw;
-    height: 4.37vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #3C86C8;
-    margin: 0 7vw 3vw 0;
-    border-radius: 0.63vw 0 0 0.63vw;
-  }
-  .ending .footer .flex-container {
-    width: 60vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 4vw;
-    font-size: 1.7vw;
+  }
+  .ending .image-wrapper .project {
+    width: 83vw;
+    margin-bottom: 4vw;
+  }
+  .ending .image-wrapper span {
+    position: relative;
+    width: 77vw;
+    font-size: 4.7vw;
+    top: 0;
+    right: 0;
+    color: white;
+    margin-bottom: 11vw;
+  }
+  .ending .contatti {
+    grid-template: 'h3' 'Nome' 'E-mail' 'Oggetto' 'Messaggio' 'Invia';
+    width: 80vw;
+    height: auto;
+    border-radius: 8vw;
+    margin: 5vw 0 7vw;
+  }
+  .ending .contatti input[type=text] {
+    width: 70vw;
+    height: 14vw;
+    margin: 4.5vw 0 0;
+    font-size: 5vw;
+    border-radius: 2vw;
+  }
+  .ending .contatti input[type=text].item4 {
+    margin-bottom: 4.5vw;
+  }
+  .ending .contatti textarea {
+    width: 70vw;
+    height: 60vw;
+    margin: 0;
+    font-size: 5vw;
+    border-radius: 2vw;
+  }
+  .ending .contatti .item1 {
+    font-size: 9vw;
+    margin: 9vw 0 2vw;
+  }
+  .ending .contatti .item6 {
+    margin: 6vw 0 6vw;
+    padding: 0;
+    width: 50vw;
+    height: 16vw;
+    border-radius: 2vw;
+    font-size: 9vw;
+  }
+  .ending .contatti .item6:hover {
+    color: white;
+    background-color: #3C86C8;
+  }
+  .ending .contatti::after {
+    display: none;
+  }
+  .ending .footer {
+    width: 80vw;
+    height: auto;
+    margin: 0 0 8vw;
+    border-radius: 2vw;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2 3 1 4 5;
+            order: 2 3 1 4 5;
+  }
+  .ending .footer .flex-container {
+    width: 75vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 0;
+    font-size: 6vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ending .footer .flex-container p {
+    text-align: center;
+    margin: 5vw 0 3vw;
   }
   .ending .footer .flex-container img {
-    width: 2.7vw;
-    display: block;
+    width: 9vw;
+    margin: 0 1.7vw 5vw;
   }
   .ending .footer::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 2.185vw solid transparent;
-    border-right: 2.185vw solid transparent;
-    border-bottom: 2.185vw solid #3C86C8;
-    border-left: 2.185vw solid #3C86C8;
-    position: absolute;
-    left: 83.4vw;
-    bottom: 0;
+    display: none;
+  }
+  .ending .footer #link {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .ending .footer #twtr {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .ending .footer #sign {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .ending .footer #gitb {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .ending .footer #fcbk {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
   .ending > * {
-    margin-right: 0.4vw;
-  }
-  #progetti {
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: 0.3vw;
-    visibility: hidden;
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

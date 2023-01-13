@@ -69,29 +69,29 @@
       align-items: center;
 
       div {
-        margin: 0;
+        margin: 0 10vw;
 
         h3 {
-          margin: 11vw 1vw 1vw;
-          font-size: 3.7vw;
+          margin: 18vw 1vw 1vw;
+          font-size: 5.7vw;
         }
 
         ul {
           margin: 1.4vw 0 10vw -5.2vw;
           li {
-            font-size: 3.4vw;
+            font-size:  5vw;
           }
         }
       }
 
       #second {
-        margin: -11vw 0 0 4vw;
+        margin: -11vw 10vw 0 10vw;
       }
 
       p {
-        margin: 0 0 23vw 23vw;
-        width: 55vw;
-        font-size: 3.4vw;
+        margin: 4vw 10vw 9vw;
+        width: auto;
+        font-size: 5.7vw;
       }
     }
   }
