@@ -15,38 +15,41 @@
 </head>
 
 <body>
+  <!--
+    Questa parte permetterebbe di inviare una mail dalla sezione contatti ma funziona solo su local host, la tolgo altrimenti disturba la visualizzazione del lato client su github pages
 
-  <?php
-    $message_sent = false;
-    $to = "francesco.frusone@gmail.com";
-    ini_set("SMTP","ssl://smtp.gmail.com");
-    ini_set("smtp_port","465");
-
-    if(isset($_POST['email']) && $_POST['email'] != "") {
-
-      $email = "$_POST[email]";
-      $userEmail = trim($email, " ");
-
-      if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
-          
-        $userName = $_POST['name'];
-        $messageSubject = $_POST['subject'];
-        $message = $_POST['message'];
-
-        $body = "";
-        $body .= "From: ".$userName. "\r\n";
-        $body .= "Email: ".$userEmail. "\r\n";
-        $body .= "Message: ".$message. "\r\n";
-
-        mail($to,$messageSubject,$body);
-
-        $message_sent = true;
+    <?php
+      $message_sent = false;
+      $to = "francesco.frusone@gmail.com";
+      ini_set("SMTP","ssl://smtp.gmail.com");
+      ini_set("smtp_port","465");
+  
+      if(isset($_POST['email']) && $_POST['email'] != "") {
+  
+        $email = "$_POST[email]";
+        $userEmail = trim($email, " ");
+  
+        if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
+            
+          $userName = $_POST['name'];
+          $messageSubject = $_POST['subject'];
+          $message = $_POST['message'];
+  
+          $body = "";
+          $body .= "From: ".$userName. "\r\n";
+          $body .= "Email: ".$userEmail. "\r\n";
+          $body .= "Message: ".$message. "\r\n";
+  
+          mail($to,$messageSubject,$body);
+  
+          $message_sent = true;
+        }
+        else {
+          echo "$message_sent";
+        }
       }
-      else {
-        echo "$message_sent";
-      }
-    }
-  ?>
+    ?>
+  -->
 
   <!-- Fine php inizio html -->
   <div class="header">
@@ -144,8 +147,9 @@
       <input type="text" name="subject" placeholder="   Oggetto" class="item4"></input>
       <textarea placeholder="
    Messaggio" name="message" class="item5" ></textarea>
+      <input type="submit" value="Invia" class="item6" ></input>
 
-   <!-- Altro php code per cambiare il submit button con un messaggio di ringraziamento per l'invio-->
+   <!-- Altro php code per cambiare il submit button con un messaggio di ringraziamento per l'invio
       <?php
         if($message_sent):
       ?>
@@ -158,7 +162,7 @@
 
       <?php
         endif;
-      ?>
+      ?>-->
     </form>
     
     <div class="footer">
