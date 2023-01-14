@@ -134,6 +134,12 @@
     }
   }
 
+  h2 {
+    align-self: center;
+    margin-bottom: 4.7vw;
+    font-size: 2.3vw;
+  }
+
   .footer {
     position: relative;
     width: 83.4vw;
@@ -287,6 +293,11 @@
       &::after {
         display: none;
       }
+    }
+
+    h2 {
+      margin: 6vw 0;
+      font-size: 4.7vw;
     }
   
     .footer {

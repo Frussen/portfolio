@@ -15,6 +15,40 @@
 </head>
 
 <body>
+
+  <?php
+    $message_sent = false;
+    $to = "francesco.frusone@gmail.com";
+    ini_set("SMTP","ssl://smtp.gmail.com");
+    ini_set("smtp_port","465");
+
+    if(isset($_POST['email']) && $_POST['email'] != "") {
+
+      $email = "$_POST[email]";
+      $userEmail = trim($email, " ");
+
+      if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
+          
+        $userName = $_POST['name'];
+        $messageSubject = $_POST['subject'];
+        $message = $_POST['message'];
+
+        $body = "";
+        $body .= "From: ".$userName. "\r\n";
+        $body .= "Email: ".$userEmail. "\r\n";
+        $body .= "Message: ".$message. "\r\n";
+
+        mail($to,$messageSubject,$body);
+
+        $message_sent = true;
+      }
+      else {
+        echo "$message_sent";
+      }
+    }
+  ?>
+
+  <!-- Fine php inizio html -->
   <div class="header">
     <h1>Francesco Frusone<div id="about"></div></h1>
     
@@ -103,14 +137,28 @@
       <span>Responsive Web Design Frontend-Mentor Challenge Sunnyside Landing Page</span>
     </div>
     
-    <form action="" name="contatti" class="contatti" id="contatti">
+    <form action="index.php" method="post" name="contatti" class="contatti" id="contatti">
       <h3 class="item1">Contattami</h3>
-      <input type="text" name="nome" placeholder="   Nome" class="item2"></input>
+      <input type="text" name="name" placeholder="   Nome" class="item2"></input>
       <input type="text" name="email" placeholder="   Email" class="item3"></input>
-      <input type="text" name="oggetto" placeholder="   Oggetto" class="item4"></input>
+      <input type="text" name="subject" placeholder="   Oggetto" class="item4"></input>
       <textarea placeholder="
-   Messaggio" name="messaggio" class="item5" ></textarea>
+   Messaggio" name="message" class="item5" ></textarea>
+
+   <!-- Altro php code per cambiare il submit button con un messaggio di ringraziamento per l'invio-->
+      <?php
+        if($message_sent):
+      ?>
+      <h2>Grazie, teniamoci in contatto!</h2>
+      
+      <?php
+        else:
+      ?>
       <input type="submit" value="Invia" class="item6" ></input>
+
+      <?php
+        endif;
+      ?>
     </form>
     
     <div class="footer">
@@ -133,5 +181,6 @@
   </div>
 
   <script src="app\js\script.js"></script>
+
 </body>
 </html>

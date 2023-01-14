@@ -11,7 +11,7 @@ let messaggio = document.querySelector('.item5');
       while(str[0]==" ") {
         str=str.substr(1);
       }
-      document.forms['contatti']['nome'].value = '   ' + str;
+      document.forms['contatti']['name'].value = '   ' + str;
     }
   })
 
@@ -31,10 +31,12 @@ let messaggio = document.querySelector('.item5');
       while(str[0]==" ") {
         str=str.substr(1);
       }
-      document.forms['contatti']['oggetto'].value = '   ' + str;
+      document.forms['contatti']['subject'].value = '   ' + str;
     }
   })
 
+  /*
+  alla fine mi sa che è meglio non mettere gli spazi al messaggio che altrimenti diventa più brutto
   messaggio.addEventListener(e, function() {
     if(messaggio.value.substr(0,4)!='\n   ') {
       let str=messaggio.value;
@@ -44,7 +46,7 @@ let messaggio = document.querySelector('.item5');
       while(str[0]==" ") {
         str=str.substr(1);
       }
-      document.forms['contatti']['messaggio'].value = '\n   ' + str;
+      document.forms['contatti']['message'].value = '\n   ' + str;
     }
-  })
+  }) */
 });

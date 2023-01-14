@@ -532,6 +532,14 @@ body {
   right: 0;
 }
 
+.ending h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 4.7vw;
+  font-size: 2.3vw;
+}
+
 .ending .footer {
   position: relative;
   width: 83.4vw;
@@ -665,6 +673,10 @@ body {
   }
   .ending .contatti::after {
     display: none;
+  }
+  .ending h2 {
+    margin: 6vw 0;
+    font-size: 4.7vw;
   }
   .ending .footer {
     width: 80vw;
