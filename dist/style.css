@@ -420,6 +420,14 @@ body {
   color: #333;
 }
 
+.ending .image-wrapper #BGG {
+  width: 90vw;
+  top: 39vw;
+  right: 0;
+  color: white;
+  font-size: 1.7vw;
+}
+
 .ending .contatti {
   position: relative;
   display: -ms-grid;
@@ -433,7 +441,7 @@ body {
   height: 33.5vw;
   background-color: rgba(69, 69, 69, 0.9);
   border-radius: 2.08vw 2.08vw 0;
-  margin-bottom: 3.68vw;
+  margin: 3.4vw 0.4vw 3.7vw 0;
 }
 
 .ending .contatti input[type=text] {
@@ -630,6 +638,11 @@ body {
     right: 0;
     color: white;
     margin-bottom: 11vw;
+  }
+  .ending .image-wrapper #BGG {
+    top: 0;
+    width: 77vw;
+    font-size: 4.7vw;
   }
   .ending .contatti {
     grid-template: 'h3' 'Nome' 'E-mail' 'Oggetto' 'Messaggio' 'Invia';
