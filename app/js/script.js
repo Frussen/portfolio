@@ -35,8 +35,9 @@ let messaggio = document.querySelector('.item5');
     }
   })
 
+
   /*
-  alla fine mi sa che è meglio non mettere gli spazi al messaggio che altrimenti diventa più brutto
+  Inutile - alla fine al messaggio è meglio non mettere gli spazi  altrimenti diventa più brutto una volta che si inizia a scrivere
   messaggio.addEventListener(e, function() {
     if(messaggio.value.substr(0,4)!='\n   ') {
       let str=messaggio.value;
@@ -48,5 +49,9 @@ let messaggio = document.querySelector('.item5');
       }
       document.forms['contatti']['message'].value = '\n   ' + str;
     }
-  }) */
+  })
+  
+  
+  
+  */
 });

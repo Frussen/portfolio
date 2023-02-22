@@ -15,43 +15,7 @@
 </head>
 
 <body>
-  <!--
-    Questa parte permetterebbe di inviare una mail dalla sezione contatti ma funziona solo su local host, la tolgo altrimenti disturba la visualizzazione del lato client su github pages
 
-    <?php
-      $message_sent = false;
-      $to = "francesco.frusone@gmail.com";
-      ini_set("SMTP","ssl://smtp.gmail.com");
-      ini_set("smtp_port","465");
-  
-      if(isset($_POST['email']) && $_POST['email'] != "") {
-  
-        $email = "$_POST[email]";
-        $userEmail = trim($email, " ");
-  
-        if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
-            
-          $userName = $_POST['name'];
-          $messageSubject = $_POST['subject'];
-          $message = $_POST['message'];
-  
-          $body = "";
-          $body .= "From: ".$userName. "\r\n";
-          $body .= "Email: ".$userEmail. "\r\n";
-          $body .= "Message: ".$message. "\r\n";
-  
-          mail($to,$messageSubject,$body);
-  
-          $message_sent = true;
-        }
-        else {
-          echo "$message_sent";
-        }
-      }
-    ?>
-  -->
-
-  <!-- Fine php inizio html -->
   <div class="header">
     <h1>Francesco Frusone<div id="about"></div></h1>
     
@@ -87,7 +51,7 @@
 
   <div class="competenze">
     <div class="wrapper">
-      <!--I inserted this wrapper div so that didn't have to make the competenze div a flexbox couse the inner items would have stretched vertically till the end of it and there was no way around it-->
+      <!--I inserted this wrapper div so that didn't have to make the competenze div a flexbox because the inner items would have stretched vertically till the end of it and there was no way around it-->
       <div>
         <h3>
         Le mie competenze informatiche:
@@ -140,7 +104,7 @@
       <span id="BGG">Data Scraping and Analisys (Scrapy, BGG XML API and Excel) of BoardGameGeek Top2000 Boardgames</span>
     </div>
     
-    <form action="index.php" method="post" name="contatti" class="contatti" id="contatti">
+    <form onsubmit="SendEmail(); reset(); return false;" name="contatti" class="contatti" id="contatti">
       <h3 class="item1">Contattami</h3>
       <input type="text" name="name" placeholder="   Nome" class="item2"></input>
       <input type="text" name="email" placeholder="   Email" class="item3"></input>
@@ -149,20 +113,6 @@
    Messaggio" name="message" class="item5" ></textarea>
       <input type="submit" value="Invia" class="item6" ></input>
 
-   <!-- Altro php code per cambiare il submit button con un messaggio di ringraziamento per l'invio
-      <?php
-        if($message_sent):
-      ?>
-      <h2>Grazie, teniamoci in contatto!</h2>
-      
-      <?php
-        else:
-      ?>
-      <input type="submit" value="Invia" class="item6" ></input>
-
-      <?php
-        endif;
-      ?>-->
     </form>
     
     <div class="footer">
@@ -185,6 +135,27 @@
   </div>
 
   <script src="app\js\script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+    function SendEmail() {
+      
+      Email.send({
+          SecureToken : "bbdd6f60-8c56-49ed-bc97-1461de031c6b",
+          To : 'frussen.portfolioform@gmail.com',
+          From : "francesco.frusone@gmail.com",
+          Subject : "This is the subject",
+          Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+    }
+    /*
+    mstp.elasticemail.com credentials:
+    Username: frussen.portfolioform@gmail.com
+    Password: C0515660CD255C9447A6338D7464AECCF1F4
+    */
+  </script>
 
 </body>
 </html>
