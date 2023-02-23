@@ -110,7 +110,7 @@
       <input type="text" name="email" placeholder="   Email" class="item3"></input>
       <input type="text" name="subject" placeholder="   Oggetto" class="item4"></input>
       <textarea placeholder="
-   Messaggio" name="message" class="item5" ></textarea>
+   Messaggio" class="item5" ></textarea>
       <input type="submit" value="Invia" class="item6" ></input>
 
     </form>
@@ -138,14 +138,19 @@
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <script>
+    let fromnome = document.querySelector('.item2');
+    let mail = document.querySelector('.item3');
+    let oggettomail = document.querySelector('.item4');
+    let testomessaggio = document.querySelector('.item5');
+    
     function SendEmail() {
       
       Email.send({
           SecureToken : "bbdd6f60-8c56-49ed-bc97-1461de031c6b",
           To : 'frussen.portfolioform@gmail.com',
-          From : "francesco.frusone@gmail.com",
-          Subject : "This is the subject",
-          Body : "And this is the body"
+          From : 'francesco.frusone@gmail.com',
+          Subject : `${oggettomail.value}`,
+          Body : `Hi, ${fromnome.value} writing from ${mail.value}, here's my message:\n\n ${testomessaggio.value}`
       }).then(
         message => alert(message)
       );

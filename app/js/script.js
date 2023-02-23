@@ -47,7 +47,7 @@ let messaggio = document.querySelector('.item5');
       while(str[0]==" ") {
         str=str.substr(1);
       }
-      document.forms['contatti']['message'].value = '\n   ' + str;
+      document.forms['contatti']['message<---eliminated too'].value = '\n   ' + str;
     }
   })
   
