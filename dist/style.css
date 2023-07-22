@@ -650,6 +650,11 @@ body {
     color: white;
     margin-bottom: 11vw;
   }
+  .ending .image-wrapper #odoo {
+    top: 0;
+    width: 77vw;
+    font-size: 4.7vw;
+  }
   .ending .image-wrapper #BGG {
     top: 0;
     width: 77vw;
