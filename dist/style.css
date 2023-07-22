@@ -395,7 +395,7 @@ body {
 }
 
 .ending h1 {
-  margin: 4.6vw 0.4vw 4.3vw;
+  margin: 4.6vw 0.4vw 4.6vw;
   font-size: 3vw;
 }
 
@@ -407,7 +407,7 @@ body {
 .ending .image-wrapper .project {
   display: block;
   width: 90vw;
-  margin-bottom: 6vw;
+  margin-bottom: 7vw;
   border-radius: 1.18vw;
 }
 
@@ -420,9 +420,17 @@ body {
   color: #333;
 }
 
+.ending .image-wrapper #odoo {
+  width: 90vw;
+  top: 36.5vw;
+  right: 0;
+  color: white;
+  font-size: 1.7vw;
+}
+
 .ending .image-wrapper #BGG {
   width: 90vw;
-  top: 39vw;
+  top: 36.9vw;
   right: 0;
   color: white;
   font-size: 1.7vw;
@@ -432,7 +440,10 @@ body {
   position: relative;
   display: -ms-grid;
   display: grid;
-  grid-template: 'h3 h3' 'Nome Messaggio' 'E-mail Messaggio' 'Oggetto Invia';
+  grid-template: 'h3 h3'
+ 'Nome Messaggio'
+ 'E-mail Messaggio'
+ 'Oggetto Invia';
   justify-items: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -441,7 +452,7 @@ body {
   height: 33.5vw;
   background-color: rgba(69, 69, 69, 0.9);
   border-radius: 2.08vw 2.08vw 0;
-  margin: 3.4vw 0.4vw 3.7vw 0;
+  margin: 0.7vw 0.4vw 3.7vw 0;
 }
 
 .ending .contatti input[type=text] {
@@ -645,7 +656,12 @@ body {
     font-size: 4.7vw;
   }
   .ending .contatti {
-    grid-template: 'h3' 'Nome' 'E-mail' 'Oggetto' 'Messaggio' 'Invia';
+    grid-template: 'h3'
+ 'Nome'
+ 'E-mail'
+ 'Oggetto'
+ 'Messaggio'
+ 'Invia';
     width: 80vw;
     height: auto;
     border-radius: 8vw;

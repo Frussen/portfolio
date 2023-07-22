@@ -21,24 +21,24 @@
     
     <div class="links">
       <a href="#about">About</a>
-      <a href="#competenze">Competenze</a>
-      <a href="#progetti">Progetti</a>
-      <a href="#contatti">Contatti</a>
+      <a href="#competenze">Skill</a>
+      <a href="#progetti">Projects</a>
+      <a href="#contatti">Contacts</a>
     </div>
   </div>
 
   <div class="about">
     <div class="text txt1">
       <h1>About</h1>
-      <p>Sono un impiegato amministrativo-contabile dell’Università di Bologna, con una passione per i sistemi complessi e per la tecnologia.</p>
+      <p>I am a Python Software Developer who loves big projects, complex systems and technology</p>
     </div>
 
     <div class="text txt2">
       <p>
-        Nel lavoro che svolgo mi piace ricercare un continuo miglioramento, acquisendo nuove  competenze, mettendomi in gioco e facendo valere il mio contributo.
+        I like searching for continuous improvements in the work I do, gaining new skills, getting involved and making my contribution count.
       </p>
       <p>
-        Per conoscermi meglio consultare il mio <a href="images\CV Francesco Frusone.pdf" download="CV Francesco Frusone">CV</a>.
+        To getting to know me better, please check out my <a href="images\CV Francesco Frusone.pdf" download="CV Francesco Frusone">CV</a>.
       </p>
     </div>
 
@@ -54,24 +54,24 @@
       <!--I inserted this wrapper div so that didn't have to make the competenze div a flexbox because the inner items would have stretched vertically till the end of it and there was no way around it-->
       <div>
         <h3>
-        Le mie competenze informatiche:
+        My skills:
         </h3>
         <ul>
-          <li>Programmazione in C</li>
-          <li>Web Design con Figma</li>
-          <li>Web Development (HTML, CSS, JavaScript)</li>
-          <li>Data Analysis (Python, SQL)</li>
+          <li>Odoo Backend Development (Python, PostgreSQL)</li>
+          <li>Web Design and Development (Figma, HTML, CSS, JS)</li>
+          <li>Data Analysis (Tableau, Excel, ML algorithms)</li>
+          <li>C Programming</li>
         </ul>
       </div>
     
       <div id="second">
         <h3>
-          Ciò che vorrei approfondire:
+          What I would like to learn:
         </h3>
         <ul>
-          <li>Strumenti per l'analisi dei dati</li>
-          <li>Tecniche di diagnostic e predictive analysis</li>
-          <li>Gestione e utilizzo dei database</li>
+          <li>Embedded System Development</li>
+          <li>C++ Programming</li>
+          <li>Odoo Frontend Development</li>
         </ul>
       </div>
 
@@ -80,39 +80,48 @@
     </div>
   </div>
 
+
   <div class="ending">
     <div id="progetti"></div>
-    <h1>Alcuni dei progetti a cui ho lavorato</h1>
-    <div class="image-wrapper">
-      <a href="https://frussen.github.io/Project1__Sunnyside_FrontendMentor/" target="_blank">
-        <img class="project" src="images\Sunnyside - Multi Device Website Mockup Generator.png" alt="Sunnyside Project">
-      </a>
-      <span>Responsive Web Design Frontend-Mentor Challenge Sunnyside Landing Page</span>
-    </div>
+
+    <h1>Some of the projects I have worked on</h1>
 
     <div class="image-wrapper">
-      <a href="https://frussen.github.io/FM2_Pricing-component-with-toggle/" target="_blank">
-        <img class="project" src="images\Pricing Toggle - Multi Device Website Mockup Generator.png" alt="Pricing Toggle Project">
+      <a href="https://www.odoo.com/">
+        <img class="project" src="images\odoo_screen.png" alt="Odoo Project">
       </a>
-      <span>Responsive Web Design Frontend-Mentor Challenge Pricing Components with Toggle</span>
+      <span id="odoo">Odoo Development - ERP Software</span>
     </div>
-    
+
     <div class="image-wrapper">
       <a href="images/FinalGamesAnalysis.xlsx" download="BoardGameGeek2000">
         <img class="project" src="images\BGGDashboard.jpeg" alt="BGG Project">
       </a>
       <span id="BGG">Data Scraping and Analisys (Scrapy, BGG XML API and Excel) of BoardGameGeek Top2000 Boardgames</span>
     </div>
+
+    <div class="image-wrapper">
+      <a href="https://frussen.github.io/FM1-Sunnyside_landing_page/" target="_blank">
+        <img class="project" src="images\Sunnyside - Multi Device Website Mockup Generator.png" alt="Sunnyside Project">
+      </a>
+      <span>Responsive Web Design Frontend-Mentor Challenge Sunnyside Landing Page</span>
+    </div>
+
+    <div class="image-wrapper">
+      <a href="https://frussen.github.io/FM2-Pricing_component_with_toggle/" target="_blank">
+        <img class="project" src="images\Pricing Toggle - Multi Device Website Mockup Generator.png" alt="Pricing Toggle Project">
+      </a>
+      <span>Responsive Web Design Frontend-Mentor Challenge Pricing Components with Toggle</span>
+    </div>
     
     <form onsubmit="SendEmail(); reset(); return false;" name="contatti" class="contatti" id="contatti">
-      <h3 class="item1">Contattami</h3>
-      <input type="text" name="name" placeholder="   Nome" class="item2"></input>
+      <h3 class="item1">Contact me</h3>
+      <input type="text" name="name" placeholder="   Name" class="item2"></input>
       <input type="text" name="email" placeholder="   Email" class="item3"></input>
-      <input type="text" name="subject" placeholder="   Oggetto" class="item4"></input>
+      <input type="text" name="subject" placeholder="   Subject" class="item4"></input>
       <textarea placeholder="
-   Messaggio" class="item5" ></textarea>
-      <input type="submit" value="Invia" class="item6" ></input>
-
+   Message" class="item5" ></textarea>
+      <input type="submit" value="Invia" class="item6"/>
     </form>
     
     <div class="footer">
