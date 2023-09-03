@@ -428,6 +428,12 @@ body {
   font-size: 1.7vw;
 }
 
+.ending .image-wrapper #tableau {
+  width: 14vw;
+  top: 22vw;
+  right: 1.7vw;
+}
+
 .ending .image-wrapper #BGG {
   width: 90vw;
   top: 36.9vw;
@@ -651,6 +657,11 @@ body {
     margin-bottom: 11vw;
   }
   .ending .image-wrapper #odoo {
+    top: 0;
+    width: 77vw;
+    font-size: 4.7vw;
+  }
+  .ending .image-wrapper #tableau {
     top: 0;
     width: 77vw;
     font-size: 4.7vw;
