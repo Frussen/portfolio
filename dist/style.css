@@ -420,6 +420,14 @@ body {
   color: #333;
 }
 
+.ending .image-wrapper #pipeline {
+  color: white;
+  width: 25vw;
+  font-size: 1.4vw;
+  top: 19.7vw;
+  right: 32.6vw;
+}
+
 .ending .image-wrapper #odoo {
   width: 90vw;
   top: 39.6vw;
@@ -655,6 +663,12 @@ body {
     right: 0;
     color: white;
     margin-bottom: 11vw;
+  }
+   .ending .image-wrapper #pipeline {
+    top: 0;
+    right: 0;
+    width: 70vw;
+    font-size: 4.7vw;
   }
   .ending .image-wrapper #odoo {
     top: 0;
